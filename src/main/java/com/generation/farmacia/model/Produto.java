@@ -33,6 +33,7 @@ public class Produto {
 	@NotNull(message = "Atributo preço é obrigatório")
 	private Double preco;
 	
+	@Size(min = 10, max = 10, message = "A data de validade deve ter no mínimo 10 caracteres e no máximo 10 para ser uma data validade valida")
 	private String dataValidade;
 	
 	private boolean precisaDeReceita;
