@@ -33,6 +33,10 @@ public class Produto {
 	@NotNull(message = "Atributo preço é obrigatório")
 	private Double preco;
 	
+	private String dataValidade;
+	
+	private boolean precisaDeReceita;
+	
 	@Size(max = 5000, message = "A foto deve ter no máximo 5000 caracteres")
 	private String foto;
 
@@ -102,6 +106,22 @@ public class Produto {
 
 	public void setFoto(String foto) {
 		this.foto = foto;
+	}
+
+	public String getDataValidade() {
+		return dataValidade;
+	}
+
+	public void setDataValidade(String dataValidade) {
+		this.dataValidade = dataValidade;
+	}
+
+	public boolean isPrecisaDeReceita() {
+		return precisaDeReceita;
+	}
+
+	public void setPrecisaDeReceita(boolean precisaDeReceita) {
+		this.precisaDeReceita = precisaDeReceita;
 	}
 	
 	
